@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recent transactions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="page-title">Recent transactions</h2>
+        <h1 class="underline-title"> </h1>
+        <div class="card">
+            <div class="card-body">
+                <img src="car.png" style="width:40px;height:40px">
+                <span class="title">Car expenses</a><span class="right">R 1800.00</span> <br>
+                    <span class="secondary-text">Available balance : R 123443.00</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img src="school.png" style="width:40px;height:40px">
+                <span class="title">School fees</a><span class="right">R 800.00</span> <br>
+                    <span class="secondary-text">Available balance : R 122643.00</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img src="hosp.png" style="width:40px;height:40px">
+                <span class="title">Emergency expenses</a><span class="right">R 1600.00</span> <br>
+                    <span class="secondary-text">Available balance : R 121043.00</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img src="money.png" style="width:40px;height:40px">
+                <span class="title">Transferred to John's account</a><span class="right">R 270.00</span> <br>
+                    <span class="secondary-text">Available balance : R 120773.00</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img src="money.png" style="width:40px;height:40px">
+                <span class="title">Transferred to Chris's account</a><span class="right">R 350.00</span> <br>
+                    <span class="secondary-text">Available balance : R 120423.00</span>
+            </div>
+        </div>
+
+
+        <button class="button"
+            onclick="location.href='http://13.71.118.126:8075/prweb/PRServlet/app/TymeBank_6806/!ServiceRequest/?pyActivity=@baseclass.doUIAction&isWebMashup=true&isPreGeneratedMashup=true&action=createNewWork&className=BBB-TymeBank-Work-GeneralServiceRequest&flowName=pyStartCase&pzSkinName=TymeBank&pyMashupSkeletonName=pyDefaultMashupSkeleton&UserIdentifier=gnani&Password=cnVsZXM=&topHarness=yes'">Contact
+            us</button>
+
+    </div>
+</body>
+<style>
+    .right {
+        float: right;
+        padding-top:7px;
+        color: #ed0e28;
+    }
+
+    .page-title {
+        margin: 10vh auto 0;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .underline-title {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        margin-bottom: 5px;
+        border-bottom: 5px solid #F3C60C
+    }
+
+    .secondary-text {
+        padding-left: 45px;
+        color: gray;
+        font-size: 14px;
+    }
+     
+    @font-face {
+        font-family: Rajadhani;
+        src: url(Rajadani.woff2);
+    }
+
+    body {
+        font-family: Rajadhani;
+        background-color: #4B4D4C;
+    }
+
+    .button {
+        background-color: #F3C60C;
+        border: 1px solid grey;
+        padding: 10px;
+        width: 300px;
+        color: black;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+        margin: 5vh auto 5vh;
+    }
+</style>
+
+</html>

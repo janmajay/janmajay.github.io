@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		@font-face {
+			font-family: Rajadhani;
+			src: url(Rajadani.woff2);
+		}
+
+		body {
+			font-family: Rajadhani;
+			background-color: #4B4D4C;
+		}
+
+		label {
+			color: #9E9491;
+		}
+
+		input::placeholder {
+			color: #D5D5D5;
+			opacity: 1;
+			padding-left: 2px;
+		}
+
+		input {
+			height: 34px;
+			width: 320px;
+			margin-top: 5px;
+		}
+
+		input[type="submit"] {
+			/*border-radius: 25px;*/
+			background-color: #F3C60C;
+			outline-color: transparent;
+			margin-top: 5vh;
+			height: 40px !important;
+			border: 1px solid #F3C60C;
+			cursor: pointer;
+		}
+
+		.field {
+			margin-top: 10px;
+		}
+
+		.internet {
+			color: #F3C60C;
+			width: auto;
+			margin: 10vh auto 5vh;
+			display: block;
+			text-align: center;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		.button {
+			background-color: transparent;
+			border: 1px solid grey;
+			/* border-radius: 25px; */
+			padding: 10px;
+			width: 300px;
+			color: grey;
+			margin: 0 auto;
+			display: block;
+			pointer-events: none;
+		}
+
+		.logo-container {
+			width: 300px;
+			margin: 10vh auto 0;
+			text-align: center;
+		}
+
+		.content-container {
+			flex-wrap: nowrap;
+			flex: 1 0 auto;
+			padding-top: 44px;
+			width: 330px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="Dashboard.html">
+		<div class="container">
+			<div class="logo-container">
+				<img src="tymebank-logo.svg" class="logo" alt="pzpega1">
+			</div>
+			<div class="content-container">
+				<div class="field">
+					<label for="id">ID Number:</label><br>
+					<input type="text" id="id" name="id" placeholder="Please enter your South African ID Number">
+				</div>
+				<div class="field">
+					<label for="password">Password:</label><br>
+					<input type="text" id="password" name="password" placeholder="Enter password">
+				</div>
+				<input type="submit" value="Submit">
+
+			</div>
+			<span class="internet">Already a Tymebank customer but new to internet Banking?<a>Click here</a></span><br>
+			<button class="button">Open an account in under 5 mins</button>
+		</div>
+
+	</form>
+</body>
+
+</html>
