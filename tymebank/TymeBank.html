@@ -11,98 +11,185 @@
 
 		body {
 			font-family: Rajadhani;
-			background-color: #4B4D4C;
+			background-color: #241F20;
+		}
+
+		.logo-container {
+			width: 300px;
+			margin: 4vh auto 2vh;
+			text-align: center;
+		}
+
+		.logo-container.lock {
+			margin-top: 0px;
 		}
 
 		label {
 			color: #9E9491;
 		}
 
-		input::placeholder {
-			color: #D5D5D5;
-			opacity: 1;
-			padding-left: 2px;
-		}
-
 		input {
-			height: 34px;
-			width: 320px;
+			height: 20px;
+			width: 95px;
+			border-bottom: 1px solid grey;
 			margin-top: 5px;
+			background-color: transparent;
+			border: 1px solid transparent;
+			border-bottom: 1px solid grey;
+			margin-bottom: 15px;
 		}
 
-		input[type="submit"] {
-			/*border-radius: 25px;*/
-			background-color: #F3C60C;
-			outline-color: transparent;
-			margin-top: 5vh;
-			height: 40px !important;
-			border: 1px solid #F3C60C;
-			cursor: pointer;
-		}
-
+		/****input[type="submit"] {
+    border-radius: 25px;
+    background-color:#F3C60C;
+    outline-color: transparent;
+	margin-top:5vh;
+	height:40px !important;
+	border: 1px solid #F3C60C;
+} ***/
 		.field {
 			margin-top: 10px;
+			text-align: center;
 		}
 
 		.internet {
-			color: #F3C60C;
+			color: #fff;
 			width: auto;
-			margin: 10vh auto 5vh;
+			margin: 3vh auto;
 			display: block;
-			text-align: center;
-			text-decoration: underline;
-			cursor: pointer;
 		}
 
 		.button {
-			background-color: transparent;
-			border: 1px solid grey;
-			/* border-radius: 25px; */
-			padding: 10px;
-			width: 300px;
-			color: grey;
+			background-color: #F3C60C;
+			border: 1px solid #F3C60C;
+			padding: 10px 20px;
+			width: 92px;
 			margin: 0 auto;
 			display: block;
-			pointer-events: none;
+			font-size: 16px;
+			font-weight: bold;
+			color: #252224;
 		}
 
-		.logo-container {
-			width: 300px;
-			margin: 10vh auto 0;
+
+
+		.card {
+			padding: 10px 30px;
+			background-color: #252224;
 			text-align: center;
+			flex-basis: 45%;
+			margin-right: 10px;
+			margin-bottom: 10px;
 		}
 
-		.content-container {
-			flex-wrap: nowrap;
-			flex: 1 0 auto;
-			padding-top: 44px;
-			width: 330px;
-			margin: 0 auto;
+		.welcome {
+			margin: 10px auto;
+			text-align: center;
+			font-size: 18px;
+			color: #fff;
+		}
+
+		.card div {
+			color: #fff;
+		}
+
+		.margin-b-15px {
+			margin-bottom: 15px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.login-pin a {
+			color: #F3C60C;
+			margin: 1vh auto;
+			display: block;
+		}
+        
+		input[type="submit"] {
+			display: block;
+			background-color: #F3C60C;
+			outline-color: transparent;
+			margin: auto;
+			height: 40px !important;
+			border: 1px solid #F3C60C;
+			cursor: pointer;
+			font-weight: bold;
+		}
+		.internet.margin-b-15px a {
+			color: #F3C60C;
+			margin-left: 5px;
+		}
+
+		.card.even {
+			margin-right: 0px;
 		}
 	</style>
+
 </head>
 
 <body>
 	<form action="Dashboard.html">
 		<div class="container">
 			<div class="logo-container">
-				<img src="tymebank-logo.svg" class="logo" alt="pzpega1">
+				<img src="Tymeligo white.png" class="logo" alt="pzpega1">
 			</div>
-			<div class="content-container">
-				<div class="field">
-					<label for="id">ID Number:</label><br>
-					<input type="text" id="id" name="id" placeholder="Please enter your South African ID Number">
-				</div>
-				<div class="field">
-					<label for="password">Password:</label><br>
-					<input type="text" id="password" name="password" placeholder="Enter password">
-				</div>
-				<input type="submit" value="Submit">
-
+			<div class="logo-container lock">
+				<img src="zz-lock.png" class="logo" alt="pzpega1" width="50px" height="50px">
 			</div>
-			<span class="internet">Already a Tymebank customer but new to internet Banking?<a>Click here</a></span><br>
-			<button class="button">Open an account in under 5 mins</button>
+			<div class="welcome">
+				<div class="margin-b-15px">
+					Welcome
+				</div>
+				<div>
+					Access your profile and transact<br>
+					on your accounts
+				</div>
+			</div>
+			<div class="field">
+				<label for="password">Enter your login pin:</label><br>
+				<input type="text" id="password" name="password">
+				<input type="submit" value="Login">
+				<span class="login-pin"><a>Forgot your login pin ?</a></span>
+				<span class="internet margin-b-15px" color="#fff">Need help?<a>Contact Us</a></span>
+				<div class="card-container" style="display:flex; margin-top:20px;">
+					<div class="card">
+						<div><img src="zz-goal.png"></div>
+						<div> Add to Goal </div>
+					</div>
+					<div class="card even">
+						<div><img src="zz-pay.png"></div>
+						<div> Pay someone </div>
+					</div>
+				</div>
+				<div class="card-container" style="display:flex;">
+					<div class="card">
+						<div><img src="zz-account.png"></div>
+						<div> View accounts </div>
+					</div>
+					<div class="card even">
+						<div><img src="zz-cash.png"></div>
+						<div> Cash </div>
+					</div>
+				</div>
+				<!-- 
+		<div class="content-container">
+		<div class="field">
+			<label for="id">ID Number:</label><br>
+			<input type="text" id="id" name="id" placeholder="Please enter your South African ID Number">
+			</div>
+			<div class="field">
+			<label for="password">Password:</label><br>
+			<input type="text" id="password" name="password" placeholder="Enter password">
+			</div>
+			<input type="submit" value="Submit">
+       
 		</div>
+		<span class="internet">Already a Tymebank customer but new to internet Banking?<a>Click here</a></span><br>
+		<button class="button">Open an account in under 5 mins</button>
+		</div> -->
 
 	</form>
 </body>
