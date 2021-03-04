@@ -15,7 +15,7 @@
 
 
    <div>
-       <h2 class="header">MY ACCOUNTS</h3>
+       <h2 class="header"> <i class="pi pi-hamburger hamburger_styles" data-click="."></i> MY ACCOUNTS</h3>
        <h1 class="underline-title2"> </h1>
    </div>
 
@@ -94,6 +94,13 @@
             us</button>
 
     </div>
+
+    <div class="footer">
+        <img src="home.svg" class="footer_icon" />
+        <img src="import.svg" class="footer_icon" />
+        <img src="card.svg" class="footer_icon" />
+        <img src="grid.svg" class="footer_icon" />
+    </div>
 </body>
 <style>
     .right {
@@ -111,6 +118,7 @@
        text-align: center;
        margin-top: 2vh;
        color: #ffffff;
+       position: relative;
     }
 
     .title {
@@ -133,6 +141,7 @@
         margin: auto;
         width: 100px;
         border-bottom: 5px solid #f3c60cf2;
+        margin-bottom: 10px;
     }
     
     .underline-title2 {
@@ -154,6 +163,11 @@
         font-family: Rajadhani;
         src: url(Rajadani.woff2);
     }
+    
+    @font-face {
+        font-family: UIkit;
+        src: url(uikit-icons.woff2);
+    }
 
     body {
         font-family: Rajadhani;
@@ -161,12 +175,12 @@
     }
 
     .card {
-        margin-top: 3px;
+        margin-top: 7px;
         border-radius: 6px;
     }
 
     .card-body {
-        padding: 10px;
+        padding: 7px 10px;
     }
 
     .button {
@@ -178,8 +192,44 @@
         margin: 0 auto;
         display: block;
         cursor: pointer;
-        margin: 3px auto 5vh;
+        margin: 14px auto 5vh;
+        font-size: 20px;
     }
+
+    .pi {
+        font-family: "UIkit" ;
+        font-style: normal ;
+        font-weight: 400;
+        position: absolute;
+        left: 10px;
+        top: 1px;
+
+    }
+    .pi-bars:before, .pi-hamburger:before {
+        content: "\e049";
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
+        padding: 0.5px;
+    }   
+
+
+    .footer {
+        /*position: fixed;*/
+        min-height: 70px;
+        border-top: 1px solid #F3C60C;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    .footer_icon{
+        width: 35px;
+        height: 35px;
+    }
+
+
 </style>
 
 </html>
