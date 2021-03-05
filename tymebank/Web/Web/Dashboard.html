@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recent transactions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="page-title">Recent transactions</h2>
+        <h1 class="underline-title"> </h1>
+        <div class="card">
+            <div class="card-body">
+                <img src="TB-CC.png" class="image">
+                <span class="title">Paid Credit card bill</a><span class="right">R 1800.00</span>
+                    </span>
+                    <div class="secondary-text">Available balance : R 123443.00</div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img src="TB-School.png" class="image">
+                <span class="title">School fees</a><span class="right">R 800.00</span>
+                    
+                </span>
+                <div class="secondary-text">Available balance : R 122643.00</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img src="TB-Car.png" class="image">
+                <span class="title">Car expenses</a><span class="right">R 1600.00</span>
+                   
+                </span>
+                <div class="secondary-text">Available balance : R 121043.00</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img src="TB-Gift.png" class="image">
+                <span class="title">John's birthday gift</a><span class="right">R 270.00</span>
+                   
+                </span>
+                <div class="secondary-text">Available balance : R 120773.00</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <img src="TB-Rest.png" class="image">
+                <span class="title">Dinner party</a><span class="right">R 350.00</span> 
+                    
+                </span>
+                <div class="secondary-text">Available balance : R 120423.00</div>
+            </div>
+        </div>
+
+
+        <button class="button"
+            onclick="location.href='http://13.71.118.126:8075/prweb/PRServlet/app/TymeBank_6806/!ServiceRequest/?pyActivity=@baseclass.doUIAction&isWebMashup=true&isPreGeneratedMashup=true&action=createNewWork&className=BBB-TymeBank-Work-GeneralServiceRequest&flowName=pyStartCase&pzSkinName=TymeBank&pyMashupSkeletonName=pyDefaultMashupSkeleton&UserIdentifier=gnani&Password=cnVsZXM=&topHarness=yes'">Contact
+            us</button>
+
+    </div>
+</body>
+<style>
+    .right {
+        float: right;
+        padding-top: 14px;
+    }
+
+    .page-title {
+        margin: 3vh auto 0;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 16px;
+        padding-left: 3px;
+    }
+
+    .image {
+        position: relative;
+        top: 10px;
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .underline-title {
+        content: "";
+        display: block;
+        margin: 2px auto 10px;
+        width: 100px;
+        border-bottom: 5px solid #F3C60C
+    }
+
+    .secondary-text {
+        padding-left: 47px;
+        color: gray;
+        font-size: 14px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    @font-face {
+        font-family: Rajadhani;
+        src: url(Rajadani.woff2);
+    }
+
+    body {
+        font-family: Rajadhani;
+        background-color: #4B4D4C;
+    }
+
+    .card {
+        margin-top: 3px;
+        border-radius: 6px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .button {
+        background-color: #F3C60C;
+        border: 1px solid grey;
+        padding: 10px;
+        width: 100%;
+        color: black;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+        margin: 3px auto 5vh;
+    }
+</style>
+
+</html>
