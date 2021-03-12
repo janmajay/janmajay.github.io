@@ -1,0 +1,58 @@
+// Header search toggle and mobile global menu
+
+// IIFE with document.ready
+function runFunctionWhenDocumentIsReady(fn) {
+  if (document.readyState != 'loading'){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
+
+// but better to have this bundled rather than pushing functions to the DOMContentLoaded event listener stack
+runFunctionWhenDocumentIsReady(function() {
+  // Clone menu-global and append to menu-global--mobile
+  // query selector to get element
+  // clone an element
+  // append it to another element
+  var menuGlobalMobile = document.querySelectorAll('.menu-global--mobile')[0];
+  menuGlobalMobile.appendChild(document.querySelectorAll('.menu-global__list')[0].cloneNode(true));
+
+  // Remove utilility class to show the the menu-global__link in menu-global--mobile
+  document.querySelectorAll('.menu-global--mobile .menu-global__link').forEach(function (item) {
+    item.classList.remove('show-for-large-up');
+  });
+
+  // Remove the search toggle on the cloned menu-global from DOM
+  var menuMobileSearch = document.querySelectorAll('.menu-global--mobile .header__search-toggle')[0];
+  menuMobileSearch.parentNode.removeChild(menuMobileSearch);
+  
+
+  // Remove utilility class to show the the menu-global__link in menu-global--mobile
+  // query selector to get element
+  // remove class from element
+    // $('.menu-global--mobile .menu-global__link').removeClass('show-for-large-up');
+
+  // Remove the search toggle on the cloned menu-global from DOM
+  // query selector to get element
+  // remove element from the dom
+  // $('.menu-global--mobile .header__search-toggle').remove();
+
+  // Header search toggle is clicked
+  // query selector to get element
+  // let toggleFunction = function() { ...} 
+  // element.addEventListener(toggleFunction, ..., ...)
+  // element.removeEventListener(toggleFunction, ..., )
+  // inside of toggle function you have the slide toggle code..
+    // either a css slider (add remove an animation class) or a javascript for loop slider with Window.requestAnimationFrame() - https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+  
+    var searchToggle = document.querySelectorAll('.header__search-toggle')[0];
+    var searchInput = document.querySelector('.form-search__input-text');
+    var toggleFunction = function() {
+      document.querySelectorAll('.header__search')[0].classList.toggle('header__search--open');
+      searchInput.focus();
+    }
+    searchToggle.addEventListener('click', toggleFunction);
+
+    // !TODO: add keyboard add event listener
+});

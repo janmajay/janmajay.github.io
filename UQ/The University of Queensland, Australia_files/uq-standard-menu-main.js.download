@@ -1,0 +1,65 @@
+/**
+ * @file
+ */
+
+function runFunctionWhenDocumentIsReady(fn) {
+  if (document.readyState != 'loading'){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
+
+// but better to have this bundled rather than pushing functions to the DOMContentLoaded event listener stack
+runFunctionWhenDocumentIsReady(function() {
+
+  // menu-main__mobile-toggle is clicked
+  // query selector to get element
+  // let toggleFunction = function() { ... } 
+  // element.addEventListener(toggleFunction, ..., ...)
+  // element.removeEventListener(toggleFunction, ..., )
+
+  var menuMainToggle = document.querySelectorAll('.menu-main__mobile-toggle')[0];
+  var toggleFunction = function() {
+    document.querySelectorAll('.menu-main__list')[0].classList.toggle('menu-main__list--open');
+  }
+  menuMainToggle.addEventListener('click', toggleFunction);
+
+  // track the old event target
+  // track new target
+  // remove class from old
+  // add to new target
+  document.querySelectorAll('.menu-main__dropdown-link').forEach(function (item) {
+    item.addEventListener('click', function( event ) {
+      var toggledMenu = event.target.nextElementSibling;
+
+      // if expanded, close
+      if (toggledMenu.classList.contains('menu-main__dropdown--open')) {
+        toggledMenu.classList.remove('menu-main__dropdown--open');
+        return;
+      }
+
+      // close the opened toggle
+      document.querySelectorAll('.menu-main__dropdown--open').forEach(function ( expanded ) {
+        expanded.classList.remove('menu-main__dropdown--open');
+        return;
+      });
+
+      // open the selected toggle
+      toggledMenu.classList.add('menu-main__dropdown--open');
+
+    });
+  });
+
+  //on window resize remove class
+  window.addEventListener("resize", function(){
+    if(window.innerWidth > 1024){
+      document.querySelectorAll('.menu-main__dropdown--open').forEach(function ( expanded ) {
+        expanded.classList.remove('menu-main__dropdown--open');
+        return;
+      });
+   }
+    
+  });
+});
+
