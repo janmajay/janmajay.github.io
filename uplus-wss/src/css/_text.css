@@ -1,0 +1,451 @@
+/* Text */
+
+body,
+button {
+  font: 16rem/1.43 'Open Sans', sans-serif;
+}
+
+body {
+  color: #414949;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:not(.decorated):hover {
+  text-decoration: underline;
+}
+
+a.fatlist-item {
+  white-space: nowrap;
+  margin-left: auto;
+  text-align: right;
+  padding-left: 28rem;
+}
+
+p.fatlist-item {
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+.quick-links li,
+.benefits li {
+  margin-bottom: 28rem;
+}
+
+.benefits li {
+  margin-left: 42rem;
+  position: relative;
+}
+
+.benefits li::after {
+  content: '';
+  width: 24rem;
+  height: 24rem;
+  background: url('../img/checkmark-w.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 14rem auto;
+  top: -0;
+  left: -42rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+header a,
+header a:visited {
+  font-size: 16rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.7rem;
+  text-transform: uppercase;
+}
+
+header span {
+  color: #fff;
+  font-size: 14rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 42rem;
+  color: #fff;
+  margin: 0 0 28rem 0;
+}
+
+h2,
+.col-2 h3 {
+  font-weight: 800;
+  font-size: 20rem;
+  margin: 0 0 16rem 0;
+  color: #000;
+  line-height: 1.2;
+}
+
+h1.hero {
+  font-size: 90rem;
+  line-height: 1.1;
+  color: #fff;
+}
+
+p {
+  font-size: 18rem;
+  margin: 0 0 8rem 0;
+}
+
+.separator > section {
+  border-right: 2px solid #979797;
+}
+.separator > section:last-child {
+  border-right: none;
+}
+
+.front-option > p {
+  margin-bottom: 8rem;
+}
+.category-option p {
+  margin-bottom: 24rem;
+}
+
+.category-option button {
+  min-width: 0;
+  height: 36rem;
+}
+
+h1.hero span {
+  display: block;
+}
+
+h3,
+th {
+  color: #646363;
+}
+
+h3 {
+  font-size: 18rem;
+  margin: 0 0 21rem 0;
+}
+
+h4 {
+  font-size: 16rem;
+  margin: 8rem 0;
+  color: #000;
+}
+
+.quick-links li,
+.quick-links a,
+.col-2 h3,
+.table-heading {
+  font-size: 20rem;
+}
+
+.col-2 h3 {
+  margin: 21rem 0 14rem 0;
+}
+
+.quick-links li,
+.quick-links a {
+  font-weight: 700;
+}
+
+.banner > div {
+  border-color: transparent;
+}
+
+.banner h3 {
+  margin: 0 0 7rem 0;
+  text-transform: uppercase;
+}
+
+.banner p {
+  font-size: 14rem;
+}
+
+.banner,
+.banner h3,
+.banner p {
+  color: #fff;
+}
+
+.banner button {
+  margin-left: 7rem;
+}
+
+.offer-text p {
+  margin: 14rem 0;
+}
+
+.offer-text h3,
+h3.account-type {
+  margin-bottom: 14rem;
+}
+
+.table-heading {
+  border-bottom: 1px solid #dedede;
+  border-radius: 3rem;
+  margin: 0 -35rem 21rem -35rem;
+  padding: 0 35rem 21rem 35rem;
+}
+
+table.align-center th,
+table.align-center td {
+  text-align: center;
+  width: 33.3333%;
+}
+
+table.color-light tr {
+  background-color: #f1f1f1;
+}
+
+table.color-light td {
+  border: 1px solid #ffffff;
+  padding: 8px;
+  color: #000;
+}
+
+table.color-heading {
+  border: 1px solid #dedede;
+  border-radius: 3rem;
+}
+
+table.color-heading tr.heading {
+  background: #f1f1f1;
+  font-size: 15rem;
+  height: 45rem;
+  font-weight: bold;
+}
+
+table.color-heading tr.footer {
+  background: #f1f1f1;
+  height: 45rem;
+}
+
+table.color-heading .trend {
+  font-size: 10rem;
+}
+
+tr.heading {
+  background: #f1f1f1;
+  font-size: 12rem;
+  height: 45rem;
+  font-weight: bold;
+}
+
+.investmentamount {
+  min-width: 130px;
+  display: inline-block;
+}
+
+p {
+  color: #646363;
+}
+
+p.activity {
+  font-size: 20rem;
+  margin: 0;
+}
+
+time {
+  text-transform: uppercase;
+  color: #646363;
+  font-size: 18rem;
+  font-weight: 600;
+}
+
+time span {
+  display: block;
+}
+
+time.fatlist-item {
+  min-width: 158rem;
+}
+
+.keyrates h4 {
+  color: #646363;
+  font-weight: 300;
+}
+
+.keyrates h4 ~ table tr {
+  font-size: 20rem;
+}
+
+.cash-projections > div {
+  align-items: center;
+}
+
+.cash-projections h2 {
+  margin: -23px auto 0 0;
+}
+
+.cash-projections h4.dropdown {
+  margin-top: -25px;
+  color: #295ed9;
+}
+
+.cash-projections span {
+  font-size: 20rem;
+  color: #000;
+}
+
+.cash-projections > div > div {
+  margin-left: 20rem;
+}
+
+.cash-projections > svg {
+  border: 1px solid #ccc;
+  margin-top: 10rem;
+}
+
+.offer-card-col > .offer-card,
+.front-option > .offer-card {
+  position: relative;
+}
+.ai-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background-color: rgba(39, 59, 63, 1);
+  flex-flow: column nowrap;
+}
+
+.ai-overlay.show {
+  display: flex;
+  min-width: 385rem;
+  z-index: 2;
+  opacity: 0.85;
+}
+
+.ai-overlay > .footer-img {
+  margin: auto 0 0 0;
+  border-top: 1px solid #fff;
+  text-align: right;
+}
+
+.ai-overlay > ul {
+  text-align: left;
+  padding: 16rem;
+}
+
+.ai-overlay > ul > li {
+  word-break: break-all;
+  display: flex;
+  margin-bottom: 15rem;
+  align-items: baseline;
+}
+
+.ai-overlay label {
+  font-weight: 700;
+  min-width: 165rem;
+  display: inline-block;
+  color: #fff;
+  margin: 0 8rem 0 0;
+}
+.ai-overlay span {
+  word-break: break-all;
+  display: inline-block;
+}
+
+.ai-toggle {
+  font-size: 24rem;
+  border-radius: 50%;
+  border: 3rem solid #fff;
+  min-width: auto;
+  height: 49rem;
+  align-self: flex-end;
+}
+
+.rts-overlay {
+  width: 100%;
+  height: 100px;
+  background-color: #344251;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  transition: transform 0.2s ease;
+  padding: 0 14px;
+  transform: translateY(80px);
+}
+
+.rts-overlay > div {
+  padding-top: 21px;
+}
+
+.rts-overlay > div > .flex {
+  max-width: 500px;
+}
+
+.rts-enable {
+  margin: 14px 14px 14px auto;
+}
+
+.rts-overlay.expanded {
+  transform: translateY(0);
+}
+
+.rts-toggle {
+  font-size: 15rem;
+  border-radius: 50%;
+  border: 3rem solid transparent;
+  width: 40rem;
+  min-width: auto;
+  padding: 0;
+}
+
+.rts-enabled .primary-options > .front-option.cdh-offer,
+.rts-enabled .offer-container {
+  outline: 1px dashed #f7112d;
+  cursor: pointer;
+}
+
+.pi.pi-rts-error {
+  background: #f7112d;
+  border-color: #fff;
+}
+
+.rts-overlay-toggle {
+  position: absolute;
+  left: 70px;
+  top: -15px;
+}
+
+.rts-overlay span {
+  font-size: 16px;
+  color: #fff;
+}
+
+.rts-overlay .comment {
+  background-color: #1c242d;
+  height: 66px;
+  overflow-y: auto;
+  font-size: 13px;
+  color: #fff;
+  flex: 1;
+  padding: 14px 14px 0 14px;
+  margin-left: 14px;
+  flex: 1;
+}
+
+.rts-overlay .comment > p {
+  color: #fff;
+  margin: 0;
+  font-size: 13px;
+}
+
+.scorecard {
+  font-size: 22rem;
+}

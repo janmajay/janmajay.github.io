@@ -1,0 +1,220 @@
+/* Special styling for the offer page */
+body > #app.form.offer {
+  background: #fff;
+  height: auto;
+}
+
+.offer > header {
+  height: 400rem;
+  padding-top: 7rem;
+  text-align: center;
+}
+
+.offer > header h1 {
+  margin-top: 28rem;
+}
+
+.category > header {
+  height: 400rem;
+  background-position: 0% 0%;
+}
+
+.offer > header p {
+  color: #fff;
+  max-width: 800rem;
+  margin: 0 auto;
+}
+
+.category h1,
+.category h2,
+.category h4 {
+  text-align: center;
+}
+.category h2 {
+  padding-top: 8rem;
+  color: #4a4a4a;
+  font-weight: 600;
+  font-size: 34rem;
+}
+
+.category > main {
+  color: #414949;
+}
+
+.category > main > p {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 30rem;
+  font-size: 24rem;
+}
+
+.offer > main {
+  margin-top: -140rem;
+  color: #414949;
+  max-width: 1000rem;
+}
+
+.offer > main.static-offer {
+  max-width: 710rem;
+}
+
+.offer .primary-card h3 {
+  font-size: 20rem;
+  font-weight: 800;
+}
+
+.category .promo,
+.offer .promo {
+  text-align: center;
+  padding: 55rem 16rem;
+}
+
+.offer .promo h4 {
+  font-size: 28rem;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.offer-footer .promo h4,
+.offer-footer footer nav > div.flex > a,
+.offer-footer button.simple {
+  color: #fff;
+}
+
+.offer-footer button.simple {
+  min-width: 70rem;
+}
+
+.offer-footer .promo h4 {
+  font-weight: normal;
+  padding-bottom: 30rem;
+}
+
+.form.category .offer-footer .promo h4 {
+  padding-bottom: 0;
+  font-size: 28rem;
+  max-width: 360rem;
+  margin: 0 auto;
+}
+
+.offer-footer p {
+  color: #fff;
+}
+
+.offer-cards .image,
+.main-offer .image {
+  background-position: 25% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200rem;
+}
+
+.main-offer > div {
+  width: 50%;
+}
+
+.main-offer > .details {
+  margin-left: 30rem;
+}
+
+.main-offer p {
+  font-size: 18rem;
+  color: #4a4a4a;
+}
+
+.offer-cards > .flex > div {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 16rem 0 0 0;
+  flex: 1;
+  margin: 8rem;
+}
+
+.offer-cards .highlight {
+  border-top: solid;
+  border-width: 1px;
+  padding: 8rem 0;
+  font-size: 14rem;
+  font-weight: 800;
+  min-height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-cards p {
+  font-size: 14rem;
+  color: #414949;
+  padding: 0 8rem;
+}
+
+.offer-cards .primary-card h3 {
+  font-size: 18rem;
+  color: #414949;
+  font-weight: 800;
+  padding: 0 8rem;
+}
+
+.offer-details {
+  margin-bottom: 32rem;
+}
+.category .offer-details {
+  max-width: 600rem;
+  margin: 40rem auto;
+}
+
+.offer-details .line {
+  width: 81rem;
+  height: 5rem;
+  border-radius: 5rem;
+  display: block;
+  margin: 8rem 0 21rem 0;
+}
+
+.offer-details .image {
+  background-position: 25% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250rem;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.offer-details > div > div {
+  width: 50%;
+}
+
+.offer-details > div > div:first-child {
+  padding: 0 56rem 0 38rem;
+  min-width: 344rem;
+}
+
+.offer-details > div > div:last-child {
+  padding-left: 8rem;
+}
+
+.offer-highlights > div {
+  margin-bottom: 25rem;
+}
+
+.offer-highlights .pi {
+  font-size: 40rem;
+  background: #fff;
+  width: 80rem;
+  height: 80rem;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1rem solid #dedede;
+}
+
+.offer-highlights p {
+  font-size: 18rem;
+  font-weight: 800;
+  color: #414949;
+}
+
+.offer-highlights .pi:before {
+  text-align: center;
+  width: 80rem;
+  line-height: 80rem;
+}

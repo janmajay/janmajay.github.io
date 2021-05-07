@@ -1,0 +1,487 @@
+/*************************************************/
+/* Responsive behavior */
+/*************************************************/
+@media screen and (max-width: 1400px) {
+  :not(.phone)html {
+    zoom: 0.8;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* Force table to not be like tables anymore */
+  table.responsive,
+  .responsive thead,
+  .responsive tbody,
+  .responsive th,
+  .responsive td,
+  .responsive tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .responsive thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .responsive tr {
+    border: 1px solid #ccc;
+  }
+
+  .responsive td {
+    border: none;
+    position: relative;
+    text-align: left;
+    padding: 3rem 0 3rem 60%;
+  }
+
+  .responsive td:before {
+    position: absolute;
+    left: 8rem;
+    padding-right: 8rem;
+    text-align: left;
+    font-weight: bold;
+    max-width: 59%;
+  }
+
+  .responsive td:before {
+    content: attr(data-title);
+  }
+
+  .responsive td.hide-collapsed {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header ul.flex li {
+    margin-right: 16rem;
+    text-align: center;
+    flex: 1;
+  }
+
+  h1.hero {
+    font-size: 50rem;
+  }
+
+  .front header {
+    height: 500rem;
+  }
+
+  .front > main {
+    margin-top: -400rem;
+  }
+
+  .front .hero-wrap {
+    height: 400rem;
+  }
+
+  h2,
+  .col-2 h3 {
+    font-size: 20rem;
+  }
+
+  p {
+    font-size: 16rem;
+  }
+
+  body,
+  button,
+  footer nav > div.flex li,
+  .inputfile + label {
+    font-size: 14rem;
+  }
+
+  footer nav > div.flex li {
+    margin-right: 3vw;
+  }
+
+  .pi.product-icon {
+    min-width: 40rem;
+    height: 40rem;
+    font-size: 20rem;
+    line-height: 35rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .col-1 {
+    width: 100%;
+    margin-bottom: 30rem;
+  }
+
+  .col-2 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    display: flex;
+  }
+
+  .secondary-card {
+    width: 50%;
+  }
+
+  .offer-card-col {
+    margin-right: 8rem;
+  }
+
+  .secondary-card.container {
+    margin-left: 8rem;
+  }
+
+  footer nav > div.flex > a {
+    margin-right: 8rem;
+  }
+
+  .tab-vertical-menu > .tab-interface > .container {
+    order: 2;
+  }
+
+  .tab-vertical-menu > .tab-interface > .container > .header {
+    display: flex;
+  }
+
+  .tab-vertical-menu > .tab-interface > .container > .body {
+    display: block;
+  }
+  .tab-vertical-menu > .tab-interface > .container.collapsed > .body {
+    display: none;
+  }
+
+  .tab-vertical-menu > .tab-interface {
+    margin: 0 24rem;
+    position: static;
+    float: none;
+    width: auto;
+  }
+
+  .tab-vertical-menu > .tabs-details {
+    margin: 0 24rem;
+  }
+
+  .tab-vertical-menu > .tab-interface > .tab-action {
+    flex-flow: row nowrap;
+    padding: 0;
+    background: none;
+    margin: 0;
+  }
+  .tab-vertical-menu > .tab-interface > .tab-action > button.simple {
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  h1.hero {
+    font-size: 40rem;
+  }
+
+  .front > header {
+    height: 300rem;
+  }
+
+  .front > main {
+    margin-top: -200rem;
+  }
+  .front .hero-wrap {
+    height: 200rem;
+  }
+  .offer > header {
+    padding: 7rem 14rem 0;
+  }
+  .offer > header h1 {
+    margin-top: 0;
+    font-size: 24rem;
+  }
+  .launch-login {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  header nav > ul.flex {
+    display: none;
+  }
+  .overlay.logout {
+    right: 100rem;
+  }
+  header > .header,
+  header > .wrap.header {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .account-picker > .flex {
+    display: block;
+  }
+
+  .account-picker > .flex > div.content-card {
+    margin: 0 0 8rem 0;
+  }
+
+  .flex-col-3 > div {
+    width: 100%;
+    width: 100%;
+    margin: 0 0 8rem 0;
+    padding: 8rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-col-3 {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .layout-inline-grid-double > div {
+    width: calc(100%);
+    margin-right: 0;
+  }
+
+  .layout-inline-grid-double > div:nth-child(2n) {
+    margin: 0;
+  }
+
+  .landing-cards > div,
+  .landing-request {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .landing-request > .landing-intro {
+    margin: 0 0 16rem 0;
+  }
+
+  .landing .landing-cards {
+    margin-top: 0;
+  }
+
+  .landing-cards > div > .flex {
+    margin-bottom: 16rem;
+  }
+
+  .hero-wrap img {
+    max-height: 150rem;
+  }
+  .list-box > h3,
+  .list-box > p {
+    font-size: 14rem;
+    margin: 0 8rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .col-2 {
+    flex-flow: column;
+  }
+
+  .col-2 > .secondary-card {
+    width: auto;
+  }
+
+  .chat-button #ChatLauncherminimized > img,
+  .chat-button #servicecaselauncherminimized > img,
+  .chat-button #launcherminimized > img,
+  .chat-button #launcher > img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .layout-labels-left > .field-item {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  .layout-labels-left > .field-item > label {
+    min-width: auto;
+    margin: 0 0 3rem 0;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .primary-options,
+  .secondary-options .wrap {
+    flex-flow: column nowrap;
+  }
+
+  .primary-options .front-option {
+    flex-flow: row nowrap;
+    display: flex;
+    border-bottom: 1px solid #dfdfdf;
+    align-items: center;
+  }
+
+  .primary-options .front-option > img {
+    width: 140px;
+  }
+
+  .primary-options .front-option > .details {
+    flex: 1;
+    text-align: left;
+    padding-left: 14rem;
+  }
+
+  .offer > main,
+  .wrap {
+    margin: 0;
+  }
+
+  .category > header,
+  .offer > header,
+  .front > header {
+    margin-bottom: 0;
+    height: 300rem;
+  }
+
+  .category > header,
+  .offer > header {
+    margin-bottom: 14rem;
+  }
+
+  button {
+    min-width: 0;
+  }
+
+  .secondary-options .front-option::after {
+    height: 40rem;
+    width: 40rem;
+    background-size: 20rem auto;
+    margin-left: -17rem;
+  }
+
+  .secondary-options .front-option:first-child::after {
+    top: -20rem;
+  }
+
+  .secondary-options .wrap {
+    margin-top: -150rem;
+    padding: 0 10vw;
+    filter: drop-shadow(0 3rem 7rem rgba(0, 0, 0, 0.5));
+    margin-bottom: 14rem;
+  }
+
+  .secondary-options .front-option {
+    background: #fff;
+    padding-top: 40rem;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .fatlist > li {
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 8rem;
+  }
+
+  time.fatlist-item {
+    font-size: 14rem;
+    min-width: 100%;
+  }
+
+  p.activity {
+    font-size: 14rem;
+    font-size: 14rem;
+    max-width: calc(100% - 85rem);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  a.fatlist-item {
+    padding-left: 0;
+  }
+
+  :not(.phone) > footer nav {
+    width: 100%;
+  }
+
+  :not(.phone) > footer nav > div > a {
+    display: none;
+  }
+  :not(.phone) > footer nav > div > a:last-child {
+    display: block;
+  }
+
+  .landing-details .image {
+    display: none;
+  }
+
+  .landing .landing-details > div > .details {
+    width: 100%;
+    padding: 21rem 35rem;
+  }
+
+  .offer-details > div > div:first-child {
+    padding: 0 50rem 0 44rem;
+    min-width: 244rem;
+  }
+
+  .offer-details .image {
+    height: 150rem;
+  }
+
+  .category .promo,
+  .landing .promo {
+    padding: 16rem;
+  }
+
+  .offer .promo > .flex {
+    flex-flow: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .category > main {
+    margin-top: -230rem;
+  }
+  .category .primary-card {
+    padding: 0;
+  }
+  .category .primary-card > .separator {
+    flex-flow: column nowrap;
+  }
+
+  .banner > div > div {
+    flex-flow: column;
+    text-align: center;
+  }
+
+  .banner i {
+    font-size: 2em;
+  }
+
+  .category .primary-card > .separator > section {
+    border-right: none;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-bottom: 1px solid #979797;
+    padding: 8rem 24rem;
+  }
+
+  .category .primary-card > .separator > section:first-child {
+    border-top: 1px solid #979797;
+  }
+  .category .primary-card > .separator > section > .flex {
+    padding: 0 0 0 24rem;
+  }
+
+  .category-highlights > .flex {
+    flex-flow: column nowrap;
+  }
+
+  .category-highlights p {
+    margin: 8rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-overlay {
+    right: 0;
+    left: 0;
+  }
+}
