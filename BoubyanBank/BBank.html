@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://janmajay.github.io/tymebank/Web/TymeBank.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		@font-face {
+			font-family: Rajadhani;
+			src: url(Rajadani.woff2);
+		}
+
+		body {
+			font-family: Rajadhani;
+			
+			background-image: url(Screenimage.png);
+  background-repeat: no-repeat;
+		}
+		
+
+		label {
+			color: #000;
+		}
+
+		input::placeholder {
+			color: #D5D5D5;
+			opacity: 1;
+			padding-left: 2px;
+		}
+
+		input {
+			height: 34px;
+			width: 320px;
+			margin-top: 5px;
+		}
+
+		input[type="submit"] {
+			/**border-radius: 25px; **/
+			background-color: #d22630;
+			outline-color: transparent;
+			margin-top: 5vh;
+			height: 40px !important;
+			border: 1px solid #d22630;
+			cursor: pointer;
+			color:#fff;
+		}
+
+		.field {
+			margin-top: 10px;
+		}
+
+		.internet {
+			color: #d22630;
+			width: auto;
+			margin: 10vh auto 5vh;
+			display: block;
+			text-align: center;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		.button {
+			background-color: transparent;
+			border: 1px solid #d22630;
+			 /** border-radius: 25px;  ***/
+			padding: 10px;
+			width: 300px;
+			color: #d22630;
+			margin: 0 auto;
+			display: block;
+			pointer-events: none;
+		}
+
+		.logo-container {
+			width: 300px;
+			margin: 10vh auto 0;
+			text-align: center;
+		}
+
+		.content-container {
+			flex-wrap: nowrap;
+			flex: 1 0 auto;
+			padding-top: 44px;
+			width: 330px;
+			margin: 0 auto;
+			
+		}
+		.internet.forgot{
+			text-decoration: none;
+			text-align: right;
+			margin: 5px;
+		}
+		.content-container.password{
+		width:100%;
+		 display: flex;
+         margin: 0 0vh;
+        justify-content: space-around;
+
+		}
+	</style>
+</head>
+
+<body cz-shortcut-listen="true">
+	<form action="./Desktop Dashboard Screen.html">
+		<div class="container">
+			<div class="logo-container">
+				<img src="BoubyanBank.svg" class="logo" alt="pzpega1">
+			</div>
+			<div class="content-container password">
+				<div class="field">
+					<label for="id">ID Number:</label><br>
+					<input type="text" id="id" name="id" placeholder="Please enter your South African ID Number">
+				</div>
+				<div class="field">
+					<label for="password">Password:</label><br>
+					<input type="password" id="password" name="password" placeholder="Enter password">
+					<span class="internet forgot">Forgot your password or login PIN?</span>
+				</div>
+				</div><div class="content-container">
+				<input type="submit" value="Login">
+
+			</div>
+			<span class="internet">Already a Tymebank customer but new to internet Banking?<a>Click here</a></span><br>
+			<button class="button">Open an account in under 5 mins</button>
+		</div>
+
+	</form>
+
+
+</body></html>
